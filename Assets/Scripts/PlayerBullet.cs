@@ -5,13 +5,13 @@ public class PlayerBullet : MonoBehaviour
     public int damage = 10;
     public float lifetime = 5f;
 
-    Rigidbody2D rb;
+    Rigidbody rb;
     bool hit;
 
 
-    void Awaeke()
+    void Awake()
     {
-        rb = GetComponent<Rigidbody2D>();
+        rb = GetComponent<Rigidbody>();
         if(rb)
         {
             rb.useGravity = false;
