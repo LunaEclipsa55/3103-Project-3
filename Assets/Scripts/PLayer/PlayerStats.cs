@@ -46,6 +46,6 @@ public class PlayerStats : MonoBehaviour
             deathScreen.SetActive(true);
 
         if (destroyOnDeath)
-            Destroy(gameObject);
+            GameObject.SetActive(false);
     }
 }
