@@ -92,10 +92,10 @@ public class EnemyPunch : MonoBehaviour
         var stats = player.GetComponent<PlayerStats>();
         if (!stats) stats = player.GetComponentInParent<PlayerStats>();
 
-        if (stats)
-        {
-            stats.TakeDamage(damage);
-            Debug.Log($"{gameObject.name} punched player for {damage}");
-        }
+        // if (stats)
+        // {
+        //     stats.TakeDamage(damage);
+        //     Debug.Log($"{gameObject.name} punched player for {damage}");
+        // }
     }
 }
