@@ -16,7 +16,7 @@ public class EnemyBullet : MonoBehaviour
         {
             var stats = other.GetComponent<PlayerStats>();
             if (!stats) stats = other.GetComponentInParent<PlayerStats>();
-            if (stats) stats.TakeDamage(damage);
+            //if (stats) stats.TakeDamage(damage);
         }
 
         if (!other.isTrigger)

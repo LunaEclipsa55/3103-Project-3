@@ -275,6 +275,6 @@ public class MainCamera : MonoBehaviour
             keyChanging = true;
         }
 
-        y += row + 6f;
+        //y += row + 6f;
     }
 }

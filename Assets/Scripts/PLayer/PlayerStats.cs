@@ -15,18 +15,18 @@ public class PlayerStats : MonoBehaviour
         health = Mathf.Clamp(health, 0, healthMax);
     }
 
-    public void TakeDamage(int amount)
-    {
-        if (amount <= 0) return;
+    // public void TakeDamage(int amount)
+    // {
+    //     if (amount <= 0) return;
 
-        health -= amount;
-        if (health < 0) health = 0;
+    //     health -= amount;
+    //     if (health < 0) health = 0;
 
-        Debug.Log($"Player took {amount} damage. Health: {health}/{healthMax}");
+    //     Debug.Log($"Player took {amount} damage. Health: {health}/{healthMax}");
 
-        if (health <= 0)
-            Die();
-    }
+    //     if (health <= 0)
+    //         Die();
+    // }
 
     public void Heal(int amount)
     {
@@ -38,14 +38,14 @@ public class PlayerStats : MonoBehaviour
         Debug.Log($"Player healed {amount}. Health: {health}/{healthMax}");
     }
 
-    void Die()
-    {
-        Debug.Log("Player died.");
+    // void Die()
+    // {
+    //     Debug.Log("Player died.");
 
-        if (deathScreen)
-            deathScreen.SetActive(true);
+    //     if (deathScreen)
+    //         deathScreen.SetActive(true);
 
-        if (destroyOnDeath)
-            GameObject.SetActive(false);
-    }
+    //     if (destroyOnDeath)
+    //         GameObject.SetActive(false);
+    // }
 }
