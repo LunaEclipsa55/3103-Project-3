@@ -236,7 +236,7 @@ public class MainCamera : MonoBehaviour
 
         float x = 40f;
         float y = 100f;
-        float row = 28f;
+        //float row = 28f;
         float bw = panelRect.width - 2f * x - 40f;
 
         DrawRow(ref y, bw, "Forward", "Forward");
@@ -275,6 +275,6 @@ public class MainCamera : MonoBehaviour
             keyChanging = true;
         }
 
-        y += row + 6f;
+        //y += row + 6f;
     }
 }
