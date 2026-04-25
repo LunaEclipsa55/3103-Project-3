@@ -85,17 +85,17 @@ public class Gun : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-// #if ENABLE_INPUT_SYSTEM
-//         var m = Mouse.current;
-//         if(enableMouse && m != null && m.leftButton.wasPressedThisFrame)
-//         {
-//             TryFire();
-//         }
-// #else
-//         if(enableMouse && Input.GetMouseButtonDown(0))
-//         {
-//             TryFire();
-//         }
-// #endif
+        #if ENABLE_INPUT_SYSTEM
+            var m = Mouse.current;
+            if(enableMouse && m != null && m.leftButton.wasPressedThisFrame)
+            {
+                TryFire();
+            }
+        #else
+            if(enableMouse && Input.GetMouseButtonDown(0))
+            {
+                TryFire();
+            }
+        #endif
     }
 }
