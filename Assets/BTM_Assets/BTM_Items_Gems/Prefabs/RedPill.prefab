@@ -63,6 +63,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 15d91f53302e333468b01c993b22cad7, type: 3}
       insertIndex: -1
       addedObject: {fileID: 2157344908428280713}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 15d91f53302e333468b01c993b22cad7, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 5431970349475044310}
   m_SourcePrefab: {fileID: 100100000, guid: 15d91f53302e333468b01c993b22cad7, type: 3}
 --- !u!1 &2153125207575981156 stripped
 GameObject:
@@ -95,3 +98,18 @@ MonoBehaviour:
   isScaling: 1
   useEasingForScaling: 1
   scaleLerpSpeed: 1.11
+--- !u!114 &5431970349475044310
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2153125207575981156}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cc5c13ef8695da2939675d8e86f9a856, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemName: Health10
+  amount: 1
+  destroyOnPickup: 1

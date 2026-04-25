@@ -34,9 +34,6 @@ public class Inventory : MonoBehaviour
     float popupTimer;
     Vector2 scrollPos;
 
-    public int healthMax = 100;
-    private int health;
-
     public LinkedList<Entry> items = new LinkedList<Entry>();
     public List<string> quickbar = new List<string> { "Empty", "Empty", "Empty", "Empty" };
 
@@ -50,7 +47,6 @@ public class Inventory : MonoBehaviour
     {
         showInventory = false;
         showhud = true;
-        health = healthMax;
     }
 
     void Update()

@@ -63,6 +63,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 01ee5422ad585ae4388dbfcac584f133, type: 3}
       insertIndex: -1
       addedObject: {fileID: 4142283542619078851}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 01ee5422ad585ae4388dbfcac584f133, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 3933463255963528719}
   m_SourcePrefab: {fileID: 100100000, guid: 01ee5422ad585ae4388dbfcac584f133, type: 3}
 --- !u!1 &4318606248750396421 stripped
 GameObject:
@@ -95,3 +98,18 @@ MonoBehaviour:
   isScaling: 1
   useEasingForScaling: 1
   scaleLerpSpeed: 1.11
+--- !u!114 &3933463255963528719
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4318606248750396421}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cc5c13ef8695da2939675d8e86f9a856, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemName: Money
+  amount: 1
+  destroyOnPickup: 1

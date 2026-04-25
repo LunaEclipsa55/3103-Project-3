@@ -63,6 +63,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 5ae72abb4f5c0814e98a001acc1127bf, type: 3}
       insertIndex: -1
       addedObject: {fileID: 7597916727523633651}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 5ae72abb4f5c0814e98a001acc1127bf, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1260540460432322759}
   m_SourcePrefab: {fileID: 100100000, guid: 5ae72abb4f5c0814e98a001acc1127bf, type: 3}
 --- !u!1 &8476828237768496633 stripped
 GameObject:
@@ -95,3 +98,18 @@ MonoBehaviour:
   isScaling: 1
   useEasingForScaling: 1
   scaleLerpSpeed: 1.11
+--- !u!114 &1260540460432322759
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8476828237768496633}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cc5c13ef8695da2939675d8e86f9a856, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemName: Gem
+  amount: 1
+  destroyOnPickup: 1

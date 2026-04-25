@@ -5,7 +5,7 @@ public class Move3D : MonoBehaviour
 {
     [SerializeField] float MoveSpeed = 5f;
     [SerializeField] float JumpForce = 7f;
-    [SerializeField] private Transform FeetPosition;
+    [SerializeField] private Transform FeetPosition;//checks for ground
     [SerializeField] private float GroundCheckRadius = 0.1f;
     [SerializeField] private LayerMask GroundLayer;
     [SerializeField] private float FallMultiplier = 2f;
@@ -43,7 +43,7 @@ public class Move3D : MonoBehaviour
     void Move()
     {
         float input = 0f;
-        var k = Keyboard.current;
+        var k = Keyboard.current;//get current input system from keyboard
         if (k != null)
         {
             if (k.aKey.isPressed) input -= 1f;
@@ -63,7 +63,7 @@ public class Move3D : MonoBehaviour
         v.x = newX;
         rb.linearVelocity = v;
 
-        if (Mathf.Abs(input) > 0.001f)
+        if (Mathf.Abs(input) > 0.001f)//face direction they moving
         {
             float targetY = (input > 0f) ? 0f : 180f;
             Quaternion tgt = Quaternion.Euler(0f, targetY, 0f);
@@ -84,12 +84,13 @@ public class Move3D : MonoBehaviour
 
     void CheckGround()
     {
-        if (jumpTimer < JumpCD)
+        if (jumpTimer < JumpCD)//wait after jump before checking for ground
         {
             jumpTimer += Time.deltaTime;
             return;
         }
 
+        //check if player is on ground using a small sphere
         isGrounded = FeetPosition != null &&
                      Physics.CheckSphere(FeetPosition.position, GroundCheckRadius, GroundLayer);
 
@@ -97,7 +98,7 @@ public class Move3D : MonoBehaviour
             jumpTimer = 0f;
     }
 
-    private void OnDrawGizmosSelected()
+    private void OnDrawGizmosSelected()//draw ground sphere
     {
         if (FeetPosition == null) return;
 
